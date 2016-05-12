@@ -1,0 +1,16 @@
+.header {
+	color: $black;
+	h1 {
+		font-size: 1.75em;
+	}
+	h2 {
+		font-size: $base__font-size;
+	}
+	@include mq(large) {
+		.flexbox & {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 // Media queries
 
-@mixin mq($break) {
+@mixin mq($break, $orientation: landscape) {
   @if $break == "small" {
     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
       @content;

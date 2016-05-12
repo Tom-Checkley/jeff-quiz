@@ -1,0 +1,7 @@
+.wrapper {
+	width: 90%;
+	margin: auto;
+	@include mq(large) {
+		width: 50%;
+	}
+}

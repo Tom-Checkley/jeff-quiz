@@ -79,7 +79,7 @@ gulp.task('compileSass', function(){
 // Browser Sync
 // ==============================
 // browser sync for dev
-gulp.task('browser-sync', ['compileSass', 'minifyScripts'], function(){
+gulp.task('browser-sync', ['compileSass'], function(){
 	browserSync({
 		server: {
 			baseDir: './dev/'
