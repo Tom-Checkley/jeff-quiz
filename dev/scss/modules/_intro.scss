@@ -1,0 +1,18 @@
+.intro {
+	border-radius: 4px;
+	margin-top: 20vh;
+	padding: 0 1em 1em;
+	text-align: center;
+	h1 {
+		font-size: 1.75em;
+	}
+
+	h2 {
+		font-size: $base__font-size;
+	}
+
+	.start {
+		display: block;
+		width: 30%;
+	}
+}

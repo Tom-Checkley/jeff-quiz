@@ -1,0 +1,41 @@
+.quiz {
+	height: 100%;
+	.block {
+		border-radius: 8px;
+		padding: .75em;
+	}
+	@include e(image) {
+		width: 100%;
+		img {
+			border-radius: 8px;
+		}
+	}
+	@include e(button-holder) {
+		align-self: flex-end;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		@include mq(medium) {
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+	@include e(button) {
+		flex-grow: 1;
+		margin: .25em 0;
+		padding: .25em 0;
+		@include mq(medium) {
+			margin: .25em;
+			flex-grow: 1;
+			flex-basis: 40%;
+		}
+	}
+	@include e(game-over) {
+		margin-top: 20vh;
+		h1 {
+			text-align: center;
+		}
+	}
+}

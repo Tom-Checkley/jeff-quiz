@@ -102,7 +102,7 @@ gulp.task('watchFiles', function(){
 // ==============================
 
 // create dist directory
-gulp.task('build-copy', ['build-cleanfolder'], function(){
+gulp.task('build-copy', function(){
   return gulp.src('dev/**/*')
   .pipe(gulp.dest('dist/'));
 });

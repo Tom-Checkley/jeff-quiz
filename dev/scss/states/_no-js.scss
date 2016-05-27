@@ -1,0 +1,14 @@
+.js {
+	.warn {
+		display: none;
+	}
+}
+
+.no-js {
+	.warn {
+		display: block;
+	}
+	.intro {
+		display: none;
+	}
+}

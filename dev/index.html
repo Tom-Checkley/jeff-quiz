@@ -16,13 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/build.css">
   <!-- endbuild -->
 
-  <!-- JS for useref compiling -->
-  <!-- build:js js/app.min.js -->
-  	<script type="text/javascript" src="js/browser-update.js"></script>
-  	<script type="text/javascript" src="js/modernizr.js"></script>
-  	<script type="text/javascript" src="js/app.js"></script>
-  	<script type="text/javascript" src="js/quiz.js"></script>
-  <!-- endbuild -->
+
 
 
 	<!-- tab icons -->
@@ -34,17 +28,29 @@
 
 </head>
 
+
 <body>
-	<header class="header block">
-		<h1>Jeff Goldblum Movie Quiz</h1>
-		<h2>How many of these Jeff Goldblum films can you guess?</h2>
-	</header>
 	<div class="wrapper">
-		<main id="quiz" class="quiz block">
 
-			<div id="quiz__image" class="quiz__image"></div>
+		<!-- Warning block for no-js -->
+		<div class="warn block">
+			<h1>Warning</h1>
+			<p>Your Javascript is not enabled, to play this quiz you need to turn on Javascript in your browsers settings</p>
+		</div>
 
-			<div class="quiz__button-holder">
+		<!-- Intro -->
+		<main class="intro block">
+			<h1>So You Think You Know Jeff?</h1>
+			<h2>How many of these Jeff Goldblum films can you guess?</h2>
+			<button class="start centered">Get Started</button>
+		</main>
+
+		<!-- Main Quiz -->
+		<main id="quiz" class="quiz">
+
+			<div id="quiz__image" class="quiz__image block centered"></div>
+
+			<div class="quiz__button-holder block">
 				<button id="guess0" class="quiz__button"></button>
 				<button id="guess1" class="quiz__button"></button>
 				<button id="guess2" class="quiz__button"></button>
@@ -52,5 +58,15 @@
 			</div>
 		</main>
 	</div>
+
+
+	<!-- JS for useref compiling -->
+  <!-- build:js js/app.min.js -->
+  	<script type="text/javascript" src="js/browser-update.js"></script>
+  	<script type="text/javascript" src="js/modernizr.js"></script>
+  	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  	<script type="text/javascript" src="js/app.js"></script>
+  	<script type="text/javascript" src="js/quiz.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
