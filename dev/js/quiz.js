@@ -118,10 +118,11 @@ var QuizUI = {
   	} else {
   		message = "You need more Jeff in your life!";
   	}
-  	var gameOver = '<div class="block quiz__game-over">';
+  	var gameOver = '<div id="game-over" class="block quiz__game-over">';
   	gameOver += '<h1 class="centered">Game Over</h1>';
   	gameOver += '<h2>'+message+'</h2>';
   	gameOver += '<h2>You scored: ' + quiz.score + ' out of '+questions.length+'</h2>';
+  	gameOver += '<button id="retry" class"button" onclick="location.reload()">Retry?</button>';
   	gameOver += '</div>';
   	document.getElementById('quiz').innerHTML = gameOver;
   },

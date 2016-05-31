@@ -378,7 +378,8 @@ button {
   border: none;
   background-color: #c10000;
   margin: .25em 0;
-  border-radius: 4px; }
+  border-radius: 4px;
+  padding: .5em 1em; }
 
 img {
   width: 100%; }
