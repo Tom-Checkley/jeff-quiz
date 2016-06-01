@@ -120,9 +120,9 @@ var QuizUI = {
   	}
   	var gameOver = '<div id="game-over" class="block quiz__game-over">';
   	gameOver += '<h1 class="centered">Game Over</h1>';
-  	gameOver += '<h2>'+message+'</h2>';
-  	gameOver += '<h2>You scored: ' + quiz.score + ' out of '+questions.length+'</h2>';
-  	gameOver += '<button id="retry" class"button" onclick="location.reload()">Retry?</button>';
+  	gameOver += '<h2 class="centered">'+message+'</h2>';
+  	gameOver += '<h2 class="centered">You scored: ' + quiz.score + ' out of '+questions.length+'</h2>';
+  	gameOver += '<button id="retry" class="button centered" onclick="location.reload()">Retry?</button>';
   	gameOver += '</div>';
   	document.getElementById('quiz').innerHTML = gameOver;
   },

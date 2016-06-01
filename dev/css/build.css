@@ -380,6 +380,8 @@ button {
   margin: .25em 0;
   border-radius: 4px;
   padding: .5em 1em; }
+  button:hover {
+    color: #ededed; }
 
 img {
   width: 100%; }
@@ -473,6 +475,13 @@ img {
   .intro .start {
     display: block;
     width: 30%; }
+
+#game-over h2 {
+  text-align: center; }
+
+#game-over .button {
+  display: block;
+  width: 50%; }
 
 .js .warn {
   display: none; }
