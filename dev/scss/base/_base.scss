@@ -12,7 +12,9 @@ body {
 	@include mq(large) {
 		background-image: url(../img/jeffpaint.jpg);
 	}
-	background-size: cover;
+	.bgsizecover & {
+		background-size: cover;
+	}
 	background-attachment: fixed;
 }
 
@@ -23,6 +25,7 @@ button {
 	margin: .25em 0;
 	border-radius: 4px;
 	padding: .5em 1em;
+	display: block;
 	&:hover {
 		color: $white;
 	}

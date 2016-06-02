@@ -11,31 +11,51 @@
 		}
 	}
 	@include e(button-holder) {
-		align-self: flex-end;
-		bottom: 0;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
+		.flexbox & {
+			display: flex;
+			flex-direction: column;
+		}
 		@include mq(medium) {
-			flex-wrap: wrap;
-			flex-direction: row;
-			justify-content: space-around;
+			.flexbox & {
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.no-flexbox & {
+				@extend %clearfix;
+			}
 		}
 	}
 	@include e(button) {
-		flex-grow: 1;
-		margin: .25em 0;
-		padding: .25em 0;
+		margin: .5em 0;
+		padding: .5em 0;
+		.flexbox & {
+			flex-grow: 1;
+		}
+		.no-flexbox & {
+			width: calc(100% - .5em);
+		}
+
 		@include mq(medium) {
 			margin: .25em;
-			flex-grow: 1;
-			flex-basis: 40%;
+			.flexbox & {
+				flex-grow: 1;
+				flex-basis: 40%;
+			}
+			.no-flexbox & {
+				display: inline-block;
+				width: calc(50% - .5em);
+				float: left;
+			}
 		}
 	}
 	@include e(game-over) {
 		margin-top: 20vh;
-		h1 {
-			text-align: center;
+		text-align: center;
+		.button {
+	 		display: block;
+	 		width: 50%;
 		}
 	}
 }
