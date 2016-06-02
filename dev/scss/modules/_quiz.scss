@@ -16,7 +16,7 @@
 			display: flex;
 			flex-direction: column;
 		}
-		@include mq(medium) {
+		@include mq(large) {
 			.flexbox & {
 				flex-wrap: wrap;
 				flex-direction: row;
@@ -33,11 +33,15 @@
 		.flexbox & {
 			flex-grow: 1;
 		}
-		.no-flexbox & {
+		.no-flexbox.csscalc & {
 			width: calc(100% - .5em);
 		}
+		.no-flexbox.no-csscalc & {
+			width: 90%;
+			margin-left: 5%;
+		}
 
-		@include mq(medium) {
+		@include mq(large) {
 			margin: .25em;
 			.flexbox & {
 				flex-grow: 1;
@@ -45,8 +49,15 @@
 			}
 			.no-flexbox & {
 				display: inline-block;
-				width: calc(50% - .5em);
 				float: left;
+			}
+			.no-flexbox.no-csscalc &{
+				width: 45%;
+				margin-left: 2.5%;
+				margin-right: 2.5%;
+			}
+			.no-flexbox.csscalc & {
+				width: calc(50% - .5em);
 			}
 		}
 	}
