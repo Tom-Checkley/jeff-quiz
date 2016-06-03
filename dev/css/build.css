@@ -396,6 +396,10 @@ button {
   padding: .5em 1em;
   display: block; }
   button:hover {
+    background-color: #a80000;
+    color: #ededed; }
+  button:focus {
+    background-color: #a80000;
     color: #ededed; }
 
 img {
